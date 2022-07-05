@@ -1,0 +1,57 @@
+@media screen and (max-width: 1000px){
+  
+       nav{
+           flex-direction: column;
+       }
+       .slider{
+           height:23vh;
+       }
+       .logo{
+           justify-content: center;
+           margin:12px 0;
+       }
+       nav ul{
+           justify-content: center;
+       }
+       .btn{
+           margin-left:3px;
+           font-size: medium;
+       }
+       .search input{
+           margin:12px 16px;
+           border-radius: 2px;
+           justify-content: center;
+       }
+      .dropdown{
+          margin-left:12px;
+      }
+      .cart{
+          margin-left:3px;
+      }
+       nav{
+           height:25vh;
+       }
+       .card-item img{
+           width:140px;
+       }
+       .category{
+           overflow-x: scroll;
+           scrollbar-width: thin;
+       }
+       .but{
+           margin-left:50px;
+       }
+       .flex-all-center
+       {
+           height:60vh;
+           overflow-x:scroll;
+           scrollbar-width:thin;
+       }
+       .foot1{
+        height:20vh;
+        overflow-x:scroll;
+        scrollbar-width:thin;
+       }
+      
+      
+}

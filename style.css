@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+:root{
+    --main-bg-color:#2874f0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    
+    background-color: var( --main-bg-color);
+    font-family: 'PT Serif', serif;
+}
+.logo{
+    display:flex;
+    align-items: center;
+}
+.logo img{
+    width:88px;
+    padding:7px 23px;
+    margin-left:12vw;
+}
+.category{
+    display:flex;
+    align-items:center;
+    margin-left:10vw;
+    margin-right:10w;  
+}
+.category img{
+    width:53px;
+    height:53px;
+    padding-right:2.5vw;
+    padding-left:2.5vw;
+    margin-top:23px;
+    justify-content:center;
+    /*margin-bottom:23px;*/
+}
+.itemss{
+    display:inline-flex;
+    flex-direction: column;  
+    justify-content: center;
+    margin-bottom:2vh;  
+}
+.details{
+    text-align:center;
+    font-family: 'PT Serif', serif;
+    font-weight:bolder;
+    margin-bottom:2vh;
+}
+nav{
+    display:flex;
+    position: sticky;
+    top:0;
+}
+
+.search{
+    display:flex;
+    align-items: center;
+}
+.search button{
+    font-family: 'PT Serif', serif;
+}
+.slider{
+    
+    width:80vw;
+    margin:12px auto;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+}
+.image1{
+    display: block;
+    margin:auto;
+    /*transform:translate(0vw);*/
+    animation: slide1 5s 1s ease-in-out infinite reverse;
+}
+.image2{
+    display: block;
+    margin:auto;
+    /*transform:translate(8vw);*/
+    animation: slide2 5s 1s ease-in-out infinite reverse;
+}
+.image3{
+    display: block;
+    margin:auto;
+    /*transform:translate(-8vw);*/
+    animation: slide3 5s 1s ease-in-out infinite reverse;
+}
+@keyframes slide1 {
+    0%{
+        transform: translate(-8vw);
+    }
+    100%{
+        transform: translate(100vw);
+    }
+}
+@keyframes slide2 {
+    0%{
+        transform: translate(0vw);
+    }
+    100%{
+        transform: translate(150vw);
+    }
+}
+@keyframes slide3 {
+    0%{
+        transform: translate(8vw);
+    }
+    100%{
+        transform: translate(200vw);
+    }
+}
+.card{
+    max-width:91vw;
+    margin:37px auto;
+}
+.cards{
+    display:flex;
+    justify-content: center;
+    overflow:hidden;
+    
+}
+.card-item{
+    display:inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:0 15px;
+}
+.card h2{
+    font-family: 'PT Serif', serif;
+}
+.container{
+    min-height: calc(100vh - 58px - 12vh);
+}
+.search input{
+    width:37vw;
+    height:30px;
+    margin:0 16px 0 1px;
+    border-radius:1px;
+    padding:0 12px;
+}
+nav{
+    height:58px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding:0 23px;
+
+}
+nav ul li a:hover{
+    font-weight: bolder;
+    
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+}
+.more{
+    margin-left:25px;
+    background-color: var( --main-bg-color);
+    color:white;
+    border:none;
+    font-weight: bolder;
+    font-size:large;
+    cursor:pointer;
+}
+.cart a{
+    margin-left:30px;
+    cursor:pointer;
+    color:white;
+    text-decoration: none;
+    font-weight:bolder;
+    font-size:large;
+}
+.seller a{
+    margin-left:30px;
+    cursor:pointer;
+    color:white;
+    text-decoration: none;
+    font-weight:bolder;
+    font-size:large;
+}
+.dropdown{
+    position:relative;
+    display:inline-block
+}
+.drop a{
+    padding:120x 16px;
+    display:block;
+    text-decoration:none;
+    color:black;
+}
+.drop{
+    display:none;
+    position:absolute;
+    min-width:160px;
+    box-shadow:5px 12px 20px 5px
+     rgba(0,0,0,0.2);
+     z-index:1;
+}
+.dropdown:hover .drop{
+    display:block;
+    background-color: white;
+}
+.buttons{
+    display:inline-flex;
+    justify-content: center;
+}
+    
+footer{
+    height:45vh;
+    background-color: #172337;
+    color:white;
+    font-family: 'PT Serif', serif;
+}
+.foot1{
+    height:10vh;
+}
+.grey{
+    color:#878787;
+}
+.preefoot{
+    display:flex;
+}
+.topic{
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.topic a{
+    color:white;
+    font-size: small;
+    font-family:'PT Serif', serif ;
+    text-decoration: none;
+}
+.topic p{
+    display:block;
+}
+/*.my-1{
+    margin:0px 0;
+}*/
+.my-2{
+    margin:26px 0;
+}
+.text-center{
+      text-align: center;
+}
+.foots{
+    display:flex;
+}
+.seller a{
+    color:white;
+    font-size: small;
+    font-weight: 700;
+    font-family:'PT Serif', serif ;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 60px;
+    margin-top:40px;
+}
